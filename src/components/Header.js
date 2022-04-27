@@ -10,7 +10,6 @@ import { useSelector} from 'react-redux';
 function Header() {
     const [burgerStatus, setBurgerStatus] = useState(false);
     const cars = useSelector(selectCars);
-    console.log(cars);
 
     
     return (
@@ -99,7 +98,7 @@ const BurgerNav = styled.div`
     padding: 20px;
     text-align:left;
     transform: ${props => props.show ? 'translateX(0)':'translateX(100%)'};
-    transition: transform 0.2s;
+    transition: transform 0.3s;
     li {
         padding: 15px 0;
         border-bottom: 1px solid rgba(0,0,0,.2);
