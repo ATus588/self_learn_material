@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="management__form tour-form">
+        <h1 class="heading-secondary ma-bt-lg">
+          <i class="fa fa-pencil-square-o"></i> Tour Management
+        </h1>
+
+        <form class="form form-container">
+          <div class="form__group2">
+            <label for="tourName" class="form__label">User Name</label>
+            <input
+              type="text"
+              id="userName"
+              class="form__input"
+              placeholder="Enter Name"
+              value=""
+            />
+          </div>
+          <div class="form__group2">
+            <label for="userEmail" class="form__label">Enter Email</label>
+            <input
+              type="text"
+              id="email"
+              name="userEmail"
+              class="form__input"
+              placeholder="example@exemple.com"
+              value=""
+            />
+          </div>
+          <div class="form__group2">
+            <label for="userPassword" class="form__label">Enter Password</label>
+            <input
+              type="password"
+              id="userPassword"
+              name="userPassword"
+              class="form__input"
+              placeholder="Don't forget your password"
+              value=""
+            />
+          </div>
+          <div class="form__group2">
+            <label for="rePassword" class="form__label">Re-enter Password</label>
+            <input
+              type="password"
+              id="rePassword"
+              name="rePassword"
+              class="form__input"
+              placeholder="Confirm your password"
+              value=""
+            />
+          </div>
+          <div class="form__group2">
+            <label for="userRole" class="form__label">Set Role</label>
+            <select id="userRole" class="form__input">
+              <option value="role-admin">Admin</option>
+              <option value="role-guide">Guider</option>
+              <option value="role-user">User</option>
+            </select>
+          </div>
+          <div class="form__group2">
+            <label for="userPhoto" class="form__label">Upload Photo</label>
+            <input
+              type="file"
+              id="userPhoto"
+              class="form__input"
+              accept="image/*"
+            />
+          </div>
+          <button type="submit" class="btn btn--green btn-small btn--center">
+            Save
+          </button>
+        </form>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </body>
+</html>
