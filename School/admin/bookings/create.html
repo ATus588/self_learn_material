@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Booking</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Lato:300,300i,700"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/admin.css" />
+</head>
+<body>
+    <header class="header"> 
+        <nav class="nav--tours">
+            <a class="nav__el" href="/">All tours</a>
+        </nav>
+        <div class="header__logo">
+            <img src="/img/logo-white.png" alt="Natours logo">
+        </div>
+        <nav class="nav nav--user"> 
+            <a class="nav__el nav__el--logout">Log out</a>
+            <a class="nav__el" href="/me">
+                <img class="nav__user-img" src='/img/users/default.jpg' alt="Photo of Admin Natours">
+                <span>Admin</span></a>
+            </nav>
+    </header>
+        <div class="admin-wraper">
+            <div class="left-Sidebar">
+                <ul>
+                    <li><a href="../users/index.html">Manage Users</a></li>
+                    <li><a href="../bookings/index.html">Manage Bookings</a></li>
+                    <li><a href="../tours/index.html">Manage Tours</a></li>
+                    <li><a href="../reviews/index.html">Manage Reviews</a></li>
+                </ul>
+            </div>
+            <div class="admin-content">
+                <div class="button-group">
+                    <a href="../tours/index.html" class = "tat-btn">View Tours</a>
+                    <a href="index.html" class = "tat-btn">Manage Bookings</a>
+
+                </div>
+                <div class="content">
+                    <h2 class = "page-title">Manual Booking</h2>
+                    <form action="" class="manual-booking">
+                        <div>
+                            <label>Tour Name</label>
+                            <select name="m-b-tour" id="m-b-tour" class = "opt-list">
+                                <option value="m-b-t-1">Tour Name 1</option>
+                                <option value="m-b-t-2">Tour Name 2</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>User Name</label>
+                            <select name="m-b-user" id="m-b-user" class = "opt-list">
+                                <option value="m-b-u-1">User Name 1</option>
+                                <option value="m-b-u-2">User Name 2</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="m-b-date">Date Created</label>
+                            <input type="date" id="m-b-date" name="m-b-date">
+                        </div>
+                        <div>
+                            <label>Price</label>
+                            <input type="text" name="m-b-price" class = "text-input" placeholder="5000k">
+                        </div>    
+                        <div>
+                            <label>Paid</label>
+                            <select name="m-b-paid" id="m-b-paid" class = "opt-list">
+                                <option value="m-b-paid-y">Already Paid</option>
+                                <option value="m-b-paid-n">Not Paid</option>
+                            </select>
+                        </div>
+                        <input type="button" class="tat-btn" id="confirm-btn" value="Confirm">      
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer"> 
+            <div class="footer-logo">
+                <img src="/img/logo-green.png" aly="Natours logo">
+            </div>
+            <ul class="footer__nav"> 
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Download apps </a></li>
+                <li><a href="#">Become a guide </a></li>
+                <li><a href="#">Careers </a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+            <p class="footer__copyright">© Designed by Jonas Schmedtmann. Backend development by DAN </p>
+        </footer>
+</body>
+</html>

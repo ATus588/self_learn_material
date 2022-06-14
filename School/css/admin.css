@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.admin-wraper {
+    display: flex;
+    height: 75em;
+}
+.admin-wraper .left-Sidebar {
+    flex: 2;   
+    height: 100%;
+    background-color:#55c57a ;
+}
+.admin-wraper .left-Sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.admin-wraper .left-Sidebar ul li a {
+    padding: 18px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 200%;
+}
+.admin-wraper .left-Sidebar ul li a:hover {
+    background-color: orange;
+    color: palegoldenrod;
+}
+.admin-wraper .admin-content {
+    flex: 8;
+    height: 100%;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+}
+.admin-content .page-title {
+    text-align: right;
+    margin: 1rem 2rem;
+    font-size: 30px;
+    font-style: italic;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align:  left;
+    border-bottom: 2px solid black;
+}
+.col-action {
+    text-align: right;
+}
+.edit-btn, .star-btn {
+    color: rgb(4, 41, 255);
+}
+.edit-btn:hover, .star-btn:hover {
+    background-color: rgb(222, 112, 226);
+}
+.delete-btn, .hide-btn {
+    color: red;
+}
+.delete-btn:hover, .hide-btn:hover {
+    background-color: rgb(248, 232, 12);
+}
+.img-resize {
+    width: 60px;
+    height: auto;
+}
+.add-users div {
+    margin: 1rem;
+}
+.add-users div label {
+    
+    color: gray;
+    font-weight: bold;
+    font-size: 25px;
+    font-style: oblique;
+}
+.add-users div input[type=text] {
+
+    width: 100%;
+    border: 1px solid #707070;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    margin-bottom: 1.2em;
+    opacity: 0.6;
+}
+.tat-btn {
+    background-color: #55c57a; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: .5em;
+    font-weight: bold;
+    width: 20rem;
+}
+.tat-btn:hover {
+    background-color: orange;
+    color: palegoldenrod;
+}
+input[type=button] {
+    margin-top: 3rem;
+}
+.manual-booking {
+    display: grid;
+}
+.manual-booking label {
+    color: gray;
+    font-weight: bold;
+    font-size: 25px;
+    font-style: oblique;
+}
+.manual-booking select, input[type=text], input[type=date] {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5em;
+    padding-left: 10px;
+}
+.manual-booking div span {
+    margin-left: 10px;
+    font-size: 15px;
+}
+.container {
+    display: flex;
+}
+.file-btn {
+    margin: 1rem;
+}
