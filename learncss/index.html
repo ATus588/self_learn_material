@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now...</h3>
+    </div>
+    <div>
+        <div class="hero-bg">
+            <section class="top">
+                <header>
+                    <a href="#">yummi.eats</a>
+                </header>
+                <h1><span>The Healthy</span> Eating Experience</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate at rerum dolorem alias ipsam ipsa! Facere non rem dolorem.</p>
+                <div class="form_container">
+                    <form action="">
+                        <div class="form_left">
+                            <label for="cit_input">Enter your city</label>
+                            <input type="text" name = "city" id = "city">
+                            <p>Example: "San Diego"</p>
+                        </div>
+                        <input type="button" value = "Find food now" id="cta-btn">
+                    </form>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <section class="page_bottom">
+        <div class="right">
+            <h2>Authentic. Awesome.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic numquam officia, inventore at pariatur mollitia exercitationem, et aut ducimus a doloremque nisi repudiandae doloribus? Quam est, dolorem nisi ut, deleniti libero placeat quia, quod exercitationem iure rerum quisquam laboriosam! Nihil asperiores temporibus vel ipsam beatae deleniti nulla nobis atque id?</p>
+
+        </div>
+        <img src="image/tree.jpg" alt="Picture of a tree">
+    </section>
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+        btn.addEventListener('click',()=>{
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay');
+        })
+
+    </script>
+</body>
+</html>
